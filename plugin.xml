@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com.lentrue.plugin.wifiinfo" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>WiFiInfo</name>
+    <js-module name="WiFiInfo" src="www/WiFiInfo.js">
+        <clobbers target="cordova.plugins.WiFiInfo"/>
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="WiFiInfo">
+                <param name="android-package" value="com.lentrue.plugin.wifiinfo.WiFiInfo"/>
+            </feature>
+        </config-file>
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+        </config-file>
+        <source-file src="src/android/WiFiInfo.java" target-dir="src/com/lentrue/plugin/wifiinfo/WiFiInfo"/>
+    </platform>
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="WiFiInfo">
+                <param name="ios-package" value="WiFiInfo"/>
+            </feature>
+        </config-file>
+        <header-file src="src/ios/WiFiInfo.h" />
+        <source-file src="src/ios/WiFiInfo.m"/>
+        <framework src="SystemConfiguration.framework" />
+        <framework src="CFNetwork.framework" />
+    </platform>
+</plugin>

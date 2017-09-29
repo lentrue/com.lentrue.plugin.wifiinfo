@@ -1,1 +1,1 @@
-# com.lentrue.plugin.wifiinfo
+#com.lentrue.plugin.wifiinfo

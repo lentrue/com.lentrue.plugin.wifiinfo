@@ -1,0 +1,22 @@
+{
+  "name": "com.lentrue.plugin.wifiinfo",
+  "version": "0.0.1",
+  "description": "cordova plugin wifiinfo with mac address,support android&ios.",
+  "cordova": {
+    "id": "com-lentrue-plugin-wifiinfo",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lentrue/com.lentrue.plugin.wifiinfo.git"
+  },
+  "author": "mail_xyc@sina.com  ",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lentrue/com.lentrue.plugin.wifiinfo/issues"
+  },
+  "homepage": "https://github.com/lentrue/com.lentrue.plugin.wifiinfo#readme"
+}
